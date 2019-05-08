@@ -1,0 +1,9 @@
+{
+  "@marcj/glut-client": "../glut.ts/packages/client",
+  "@marcj/glut-core": "../glut.ts/packages/core",
+  "@marcj/glut-server": "../glut.ts/packages/server",
+  "!@marcj/marshal": "../marshal.ts/packages/core",
+  "!@marcj/marshal-mongo": "../marshal.ts/packages/mongo",
+  "!@marcj/estdlib": "../estdlib.ts/packages/estdlib",
+  "!@marcj/estdlib-rxjs": "../estdlib.ts/packages/estdlib-rxjs"
+}

@@ -1,0 +1,118 @@
+.left-small {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 80px;
+    background-color: #303b3e;
+    overflow: auto;
+    text-align: center;
+
+    .logo {
+        padding: 15px 0;
+    }
+
+    img {
+        width: 21px;
+    }
+
+    .menu {
+        padding-top: 15px;
+    }
+}
+
+.left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    border-right: 1px solid #484848;
+    overflow: auto;
+    padding-top: 28px;
+    -webkit-app-region: drag;
+    background-color: #303b3e;
+}
+
+.left-bottom {
+    position: absolute;
+    left: 0px;
+    width: 300px;
+    bottom: 0;
+    height: 60px;
+    border-top: 1px solid var(--line-color-light);
+    border-right: 1px solid var(--line-color-light);
+    padding-top: 5px;
+}
+
+.filter {
+    display: flex;
+    margin: 0px 21px;
+    margin-bottom: 10px;
+}
+
+.filter input {
+    height: 22px;
+    line-height: 22px;
+    /*border-radius: 0;*/
+    opacity: 0.7;
+}
+
+.filter .icon {
+    width: 23px;
+    position: relative;
+    padding-top: 2px;
+    text-align: right;
+}
+
+.counts {
+    float: right;
+    display: inline-block;
+    color: silver;
+}
+
+h3 {
+    font-size: 12px;
+    text-align: center;
+    color: #c8c8c8;
+    font-weight: 400;
+    /*padding-left: 10px;*/
+    margin: 8px 0;
+    padding: 5px 21px;
+    border-bottom: 1px solid var(--line-color-light);
+}
+
+::ng-deep body.electron .left {
+    background-color: transparent;
+}
+
+.left a {
+    display: block;
+    color: white;
+    padding: 3px 10px;
+    padding-left: 21px;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: default;
+}
+
+.left a.selected {
+    background-color: var(--color-selection-light);
+}
+
+.main {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: auto;
+
+    &.with-sidebar {
+        left: 300px;
+    }
+
+    &.with-sidebar-small {
+        left: 80px;
+    }
+}

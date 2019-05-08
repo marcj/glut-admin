@@ -1,0 +1,17 @@
+0 silly argv { _: [ 'bootstrap' ],
+0 silly argv   nohoist: '*',
+0 silly argv   ci: false,
+0 silly argv   lernaVersion: '3.13.0',
+0 silly argv   '$0': '/usr/local/bin/lerna' }
+1 notice cli v3.13.0
+2 verbose rootPath /Users/marc/bude/glut-admin
+3 error Error: Invalid package name "glut/admin-core": name can only contain URL-friendly characters
+3 error     at invalidPackageName (/usr/local/lib/node_modules/lerna/node_modules/npm-package-arg/npa.js:82:15)
+3 error     at Result.setName (/usr/local/lib/node_modules/lerna/node_modules/npm-package-arg/npa.js:118:11)
+3 error     at new Result (/usr/local/lib/node_modules/lerna/node_modules/npm-package-arg/npa.js:107:23)
+3 error     at Function.resolve (/usr/local/lib/node_modules/lerna/node_modules/npm-package-arg/npa.js:54:15)
+3 error     at Object.keys.forEach.depName (/usr/local/lib/node_modules/lerna/node_modules/@lerna/package-graph/index.js:109:30)
+3 error     at Array.forEach (<anonymous>)
+3 error     at PackageGraph.forEach (/usr/local/lib/node_modules/lerna/node_modules/@lerna/package-graph/index.js:103:38)
+3 error     at Map.forEach (<anonymous>)
+3 error     at new PackageGraph (/usr/local/lib/node_modules/lerna/node_modules/@lerna/package-graph/index.js:92:10)

@@ -1,0 +1,7 @@
+packages/*/node_modules
+app-old
+docker-build/Dockerfile
+packages/electron
+Dockerfile
+Dockerfile.cli
+.dockerignore

@@ -1,0 +1,71 @@
+{
+  "name": "@glut/admin-core",
+  "version": "0.0.1",
+  "repository": "git@github.com:marcj/glut-admin.git",
+  "author": "Marc J. Schmidt <marc@marcjschmidt.de>",
+  "description": "",
+  "main": "index.ts",
+  "sideEffects": false,
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "private": true,
+  "license": "ISC",
+  "peerDependencies": {
+    "rxjs": "6.3.3",
+    "@marcj/marshal": "^0.8.7",
+    "@marcj/glut-core": "^0.0.14",
+    "@marcj/glut-client": "^0.0.14",
+    "reflect-metadata": "^0.1.12",
+    "buffer": "^5.2.1"
+  },
+  "dependencies": {
+    "@marcj/estdlib": "^0.1.9",
+    "@marcj/estdlib-rxjs": "^0.1.9",
+    "dot-prop": "^4.2.0",
+    "events": "^2.0.0",
+    "fast-json-patch": "^2.0.7"
+  },
+  "devDependencies": {
+    "@types/dot-prop": "^4.2.0",
+    "@types/fs-extra": "^5.0.4",
+    "@marcj/glut-core": "^0.0.14",
+    "@marcj/glut-client": "^0.0.14",
+    "@types/uuid": "^3.4.4",
+    "@marcj/marshal": "^0.8.7",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "6.3.3",
+    "buffer": "^5.2.1",
+    "@types/jest": "^23.3.9",
+    "@types/node": "^10.12.5",
+    "coveralls": "^3.0.2",
+    "jest": "^23.6.0",
+    "lerna": "^3.4.3",
+    "ts-jest": "22.0.4",
+    "jest-extended": "^0.11.0",
+    "typescript": "^3.3.3333",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.9.1"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "testMatch": [
+      "**/*.spec.ts"
+    ],
+    "setupTestFrameworkScriptFile": "jest-extended",
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tests/tsconfig.json"
+      }
+    }
+  }
+}

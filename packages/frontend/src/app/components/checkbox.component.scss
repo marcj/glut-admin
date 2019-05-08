@@ -1,0 +1,58 @@
+:host {
+    display: inline-block;
+    position: relative;
+
+    min-height: 18px;
+    min-width: 18px;
+    line-height: 18px;
+
+    padding-left: 24px;
+}
+
+
+:host.no-text {
+    padding-left: 0px;
+}
+
+//
+//:host.small {
+//    line-height: 22px;
+//    font-size: 14px;
+//    padding-left: 33px;
+//    padding-top: 3px;
+//}
+//
+//:host.small .knob {
+//    height: 18px;
+//    width: 18px;
+//}
+
+.knob {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 18px;
+    width: 18px;
+    border-radius: 4px;
+
+    background: white;
+    border: 1px solid #D5DADE;
+
+}
+
+:host.checked .knob:after {
+    position: absolute;
+    content: '';
+    left: 3px;
+    right: 3px;
+    top: 3px;
+    bottom: 3px;
+    border-radius: 2px;
+    background-color: #a0a0a0;
+    opacity: 0.85;
+}
+
+:host-context(.dark) .knob {
+    background: #7575753d;
+    border: 1px solid #757c8188;
+}
